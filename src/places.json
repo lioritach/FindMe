@@ -1,0 +1,149 @@
+{
+  "titles": [
+    {
+      "title": "בתי כנסת",
+      "path": "synagogue",
+      "types": ["synagogue", "place_of_worship"]
+    },
+    {
+      "title": "מאפיות",
+      "path": "bakery",
+      "types": ["bakery"]
+    },
+    {
+      "title": "חשמל ומזגנים",
+      "path": "electronics",
+      "types": ["electronics_store"]
+    },
+    {
+      "title": "דואר",
+      "path": "post-office",
+      "types": ["post_office"]
+    },
+    {
+      "title": "ללא קטגוריה",
+      "path": "no-types",
+      "types": ["emptytypes"]
+    },
+    {
+      "title": "בתי ספר, גנים ומעונות",
+      "path": "schools-kindergardens",
+      "types": ["school"]
+    },
+    {
+      "title": "טיפוח וספא",
+      "path": "beauty-spa",
+      "types": ["beauty_salon", "spa"]
+    },
+    {
+      "title": "סופרים ומכולות",
+      "path": "supermarkets",
+      "types": ["grocery_store", "supermarkets"]
+    },
+    {
+      "title": "מרפאות, בתי אבות וסופר פארם",
+      "path": "health-pharm",
+      "types": ["doctor", "health"]
+    },
+    {
+      "title": "חנויות אוכל, מתוקים ומסעדות",
+      "path": "restaurants",
+      "types": ["food", "restaurant"]
+    },
+    {
+      "title": "חנויות כללי",
+      "path": "general-stores",
+      "types": ["store"]
+    },
+    {
+      "title": "מוסכי רכב והשכרות",
+      "path": "car-repairs-rent",
+      "types": ["car_repair", "car_dealer"]
+    },
+    {
+      "title": "הכל לבית",
+      "path": "home-goods",
+      "types": ["furniture_store", "home_goods_store"]
+    },
+    {
+      "title": "תחנות דלק",
+      "path": "gas-stations",
+      "types": ["gas_station"]
+    },
+    {
+      "title": "ביטוחים",
+      "path": "insurance",
+      "types": ["insurance"]
+    },
+    {
+      "title": "חנויות תכשיטים",
+      "path": "jewelry",
+      "types": ["jewelry_store"]
+    },
+    {
+      "title": "מכוני כושר ומאמנים",
+      "path": "gyms",
+      "types": ["gym"]
+    },
+    {
+      "title": "ביגוד הנעלה ואביזרים",
+      "path": "clothing-and-footwear",
+      "types": ["clothing_store", "shoe_store"]
+    },
+    {
+      "title": "נדל\"ן",
+      "path": "real-estate",
+      "types": ["real_estate_agency"]
+    },
+    {
+      "title": "תחנת מוניות",
+      "path": "taxi",
+      "types": ["taxi_stand"]
+    },
+    {
+      "title": "ספריות",
+      "path": "library",
+      "types": ["library"]
+    },
+    {
+      "title": "פיננסים",
+      "path": "finance",
+      "types": ["finance"]
+    },
+    {
+      "title": "וטרינרים",
+      "path": "veterinarian",
+      "types": ["veterinarian"]
+    },
+    {
+      "title": "בעלי חיים",
+      "path": "pets",
+      "types": ["pet_store"]
+    },
+    {
+      "title": "סלולר ומחשבים",
+      "path": "electronics-store",
+      "types": ["electronics_store"]
+    },
+    {
+      "title": "מספרות ועיצוב שיער",
+      "path": "hairdressing-salon",
+      "types": ["hairdressing_salon"]
+    },
+    {
+      "title": "ברים",
+      "path": "bars",
+      "types": ["bar"]
+    },
+    {
+      "title": "בתי עלמין",
+      "path": "cemetery",
+      "types": ["cemetery"]
+    },
+    {
+      "title": "מכללות ואוניברסיטאות",
+      "path": "university",
+      "types": ["university"]
+    }
+  ]
+}
