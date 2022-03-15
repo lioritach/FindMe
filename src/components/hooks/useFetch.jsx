@@ -4,10 +4,10 @@ import { useEffect } from "react";
 export const useFetch = (title, userCorrdinates, types) => {
   useEffect(() => {
     const fetchData = async () => {
-      const lsCategory = JSON.parse(localStorage.getItem(types));
+      const localstorageCategory = JSON.parse(localStorage.getItem(types));
 
-      if (lsCategory && userCorrdinates) {
-        return lsCategory;
+      if (localstorageCategory && userCorrdinates) {
+        return localstorageCategory;
       }
 
       try {

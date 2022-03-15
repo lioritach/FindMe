@@ -1,61 +1,26 @@
 import React from "react";
+
+//components
 import notfound from "../../images/notfound.png";
 import pagenotfound from "../../images/404.png";
+
+//css
+import "./NotFound.css";
 
 const NotFound = ({ title }) => {
   return (
     <div>
       {title ? (
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-          }}
-        >
-          <img
-            src={pagenotfound}
-            alt=""
-            style={{
-              display: "block",
-              marginLeft: "auto",
-              marginRight: "auto",
-              width: "50%",
-            }}
-          />
-          <span
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              flexWrap: "wrap",
-
-              marginTop: 10,
-
-              lineHeight: 1.15,
-              fontSize: 20,
-              color: "#0070f3",
-              fontWeight: "bold",
-            }}
-          >
+        <div className="notfound-container">
+          <img src={pagenotfound} alt="notfound-img" />
+          <span className="notfound-span">
             אופס .... העמוד אליו הגעתם לא קיים
           </span>
         </div>
       ) : (
         <>
           <img src={notfound} alt="" height={250} />
-          <span
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              flexWrap: "wrap",
-              marginTop: 10,
-
-              lineHeight: 1.15,
-              fontSize: 20,
-              color: "#0070f3",
-              fontWeight: "bold",
-            }}
-          >
+          <span className="notfound-span">
             אופס .... לא נמצאו מקומות הקרובים אליכם
           </span>
         </>

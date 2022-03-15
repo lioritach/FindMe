@@ -1,19 +1,22 @@
 import React, { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
+
+//components
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
-import { Routes, Route } from "react-router-dom";
 import Places from "./pages/Places/Places";
 import NotFound from "./pages/NotFound/NotFound";
+
+//json
 import data from "./places.json";
 
 const App = () => {
   const [geoLocation, setGeoLocation] = useState([]);
 
-  //get current location of the user
+  /** get current location of the user */
   const success = (position) => {
     let cordinates = [];
-    cordinates.push(position.coords.latitude);
-    cordinates.push(position.coords.longitude);
+    cordinates.push(position.coords.latitude, position.coords.longitude);
     setGeoLocation(cordinates.map(String));
   };
 
@@ -33,11 +36,11 @@ const App = () => {
         {data.titles?.map((place, id) => (
           <Route
             key={id}
-            path={place.path}
+            path={place?.path}
             element={
               <Places
-                title={place.title}
-                types={place.types}
+                title={place?.title}
+                types={place?.types}
                 userCorrdinates={geoLocation}
               />
             }

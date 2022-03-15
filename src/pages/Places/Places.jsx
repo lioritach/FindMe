@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Cards from "../../components/Cards/Cards";
 import { useFetch } from "../../components/hooks/useFetch";
+
+//components
+import Cards from "../../components/Cards/Cards";
 import Spinner from "../../components/Spinner/Spinner";
 import Location from "../../images/location.png";
 import NotFound from "../NotFound/NotFound";
 
+//css
 import "./Places.css";
 
 const Places = ({ title, types, userCorrdinates }) => {
@@ -32,14 +35,14 @@ const Places = ({ title, types, userCorrdinates }) => {
   return (
     <div className="places-container">
       {data?.length ? (
-        data.map((item) => (
+        data?.map((item) => (
           <Cards
-            key={item.id}
-            phone={item.phone}
-            name={item.name}
-            website={item.website}
+            key={item?.id}
+            phone={item?.phone}
+            name={item?.name}
+            website={item?.website}
             img={Location}
-            coordinates={item.location}
+            coordinates={item?.location}
             userCorrdinates={userCorrdinates}
           />
         ))

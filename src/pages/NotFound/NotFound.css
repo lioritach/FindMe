@@ -1,0 +1,23 @@
+.notfound-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.notfound-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.notfound-span {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  line-height: 1.15;
+  font-size: 20px;
+  color: #0070f3;
+  font-weight: bold;
+}

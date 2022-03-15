@@ -1,9 +1,13 @@
 import React from "react";
-import "./Cards.css";
+
+//icons
 import { GiPathDistance } from "react-icons/gi";
 import { GoLocation } from "react-icons/go";
 import { CgWebsite } from "react-icons/cg";
 import { AiOutlinePhone } from "react-icons/ai";
+
+//css
+import "./Cards.css";
 
 const Cards = ({ phone, name, website = "", coordinates, userCorrdinates }) => {
   let placeCoordinates = [];
@@ -17,12 +21,10 @@ const Cards = ({ phone, name, website = "", coordinates, userCorrdinates }) => {
   function calcCrow(latlon1, latlon2) {
     let newLatLon1 = latlon1.map(Number);
     let newLatLon2 = latlon2.map(Number);
+    let lat1, lon1, lat2, lon2;
 
-    let lat1 = newLatLon1[0];
-    let lon1 = newLatLon1[1];
-
-    let lat2 = newLatLon2[0];
-    let lon2 = newLatLon2[1];
+    [lat1, lon1] = newLatLon1;
+    [lat2, lon2] = newLatLon2;
 
     let R = 6371; // km
     let dLat = toRad(lat2 - lat1);
@@ -44,7 +46,7 @@ const Cards = ({ phone, name, website = "", coordinates, userCorrdinates }) => {
   }
 
   let distance = calcCrow(placeCoordinates, userCorrdinates).toFixed(1);
-  distance = distance[0] === "0" ? distance[2] + "00 מטר" : "קמ";
+  distance = distance[0] === "0" ? distance[2] + "00 מ'" : "קמ";
 
   return (
     <div className="card-grid">
