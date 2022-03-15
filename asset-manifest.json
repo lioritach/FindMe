@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/lioritach/FindMe/static/css/main.673ba015.css",
+    "main.js": "/lioritach/FindMe/static/js/main.439f8551.js",
+    "static/media/notfound.png": "/lioritach/FindMe/static/media/notfound.d2e1fb2af2b4d5f5e5db.png",
+    "static/media/404.png": "/lioritach/FindMe/static/media/404.47409588f74acf5dc010.png",
+    "static/media/icon.png": "/lioritach/FindMe/static/media/icon.743e376a40c5e025ff31.png",
+    "static/media/location.png": "/lioritach/FindMe/static/media/location.83ca429bfcd63c592cf1.png",
+    "index.html": "/lioritach/FindMe/index.html",
+    "main.673ba015.css.map": "/lioritach/FindMe/static/css/main.673ba015.css.map",
+    "main.439f8551.js.map": "/lioritach/FindMe/static/js/main.439f8551.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.673ba015.css",
+    "static/js/main.439f8551.js"
+  ]
+}
